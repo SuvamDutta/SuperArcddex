@@ -1,0 +1,65 @@
+.portfolio-container {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 400px;
+}
+
+.portfolio-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.title-section h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.text-blue {
+  color: #3b82f6;
+}
+
+.balance-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.balance-summary .label {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.balance-summary .value {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.portfolio-chart-wrapper {
+  flex: 1;
+  width: 100%;
+  position: relative;
+  min-height: 0; /* Important for flex child to not overflow */
+}
+
+.portfolio-chart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
